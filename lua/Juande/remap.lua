@@ -46,6 +46,7 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/the
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader>dg", vim.diagnostic.open_float);
 vim.keymap.set("n", "<C-b>", "<cmd>NeoTreeFocusToggle<CR>");
+vim.keymap.set("n", "<C-e>", "<cmd>Neotree<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
