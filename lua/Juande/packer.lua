@@ -21,6 +21,14 @@ return require('packer').startup(function(use)
 	  end 
   })
 
+  use({
+    'catppuccin/nvim',
+    as = 'catppuccin',
+    config = function()
+        vim.cmd('colorscheme catppuccin')
+    end
+  })
+
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v1.x',
@@ -48,7 +56,6 @@ return require('packer').startup(function(use)
     {'rafamadriz/friendly-snippets'}, -- Optional
   }
 }
-
 use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
 use('nvim-treesitter/playground')
 use('theprimeagen/harpoon')
