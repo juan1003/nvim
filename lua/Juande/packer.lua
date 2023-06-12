@@ -29,6 +29,22 @@ return require('packer').startup(function(use)
     end
   })
 
+  use({
+    'folke/tokyonight.nvim',
+    as = 'tokyonight',
+    config = function()
+        vim.cmd('colorscheme tokyonight')
+    end
+  })
+
+  use({
+    'thedenisnikulin/vim-cyberpunk',
+    as = 'cyberpunk',
+    config = function()
+        vim.cmd('colorscheme cyberpunk')
+    end
+  })
+
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v1.x',
