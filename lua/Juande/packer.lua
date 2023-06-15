@@ -45,6 +45,14 @@ return require('packer').startup(function(use)
     end
   })
 
+  use({
+      "oxfist/night-owl.nvim",
+      as = 'night-owl',
+      config = function()
+          vim.cmd('colorscheme night-owl')
+      end
+  })
+
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v1.x',
