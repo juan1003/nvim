@@ -97,6 +97,5 @@ use {
       "MunifTanjim/nui.nvim",
     }
   }
-
 use('github/copilot.vim')
 end)
