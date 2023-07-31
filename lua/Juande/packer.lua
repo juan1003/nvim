@@ -98,5 +98,5 @@ use {
     }
   }
 use('github/copilot.vim')
-use { 'https://codeberg.org/esensar/nvim-dev-container'}
+use { 'https://codeberg.org/esensar/nvim-dev-container', require("devcontainer").setup }
 end)
