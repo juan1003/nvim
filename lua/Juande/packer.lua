@@ -98,4 +98,5 @@ use {
     }
   }
 use('github/copilot.vim')
+use { 'https://codeberg.org/esensar/nvim-dev-container'}
 end)

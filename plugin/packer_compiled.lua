@@ -80,7 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   catppuccin = {
-    config = { "\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0" },
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jdejesus/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
@@ -116,7 +116,7 @@ _G.packer_plugins = {
     url = "https://github.com/github/copilot.vim"
   },
   cyberpunk = {
-    config = { "\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme cyberpunk\bcmd\bvim\0" },
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme cyberpunk\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jdejesus/.local/share/nvim/site/pack/packer/start/cyberpunk",
     url = "https://github.com/thedenisnikulin/vim-cyberpunk"
@@ -152,7 +152,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
   ["night-owl"] = {
-    config = { "\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme night-owl\bcmd\bvim\0" },
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme night-owl\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jdejesus/.local/share/nvim/site/pack/packer/start/night-owl",
     url = "https://github.com/oxfist/night-owl.nvim"
@@ -166,6 +166,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jdejesus/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dev-container"] = {
+    loaded = true,
+    path = "/home/jdejesus/.local/share/nvim/site/pack/packer/start/nvim-dev-container",
+    url = "https://codeberg.org/esensar/nvim-dev-container"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -198,7 +203,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["rose-pine"] = {
-    config = { "\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jdejesus/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
@@ -209,7 +214,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   tokyonight = {
-    config = { "\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0" },
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jdejesus/.local/share/nvim/site/pack/packer/start/tokyonight",
     url = "https://github.com/folke/tokyonight.nvim"
@@ -227,26 +232,26 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 -- Config for: tokyonight
 time([[Config for tokyonight]], true)
-try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight")
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight")
 time([[Config for tokyonight]], false)
--- Config for: cyberpunk
-time([[Config for cyberpunk]], true)
-try_loadstring("\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme cyberpunk\bcmd\bvim\0", "config", "cyberpunk")
-time([[Config for cyberpunk]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 -- Config for: night-owl
 time([[Config for night-owl]], true)
-try_loadstring("\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme night-owl\bcmd\bvim\0", "config", "night-owl")
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme night-owl\bcmd\bvim\0", "config", "night-owl")
 time([[Config for night-owl]], false)
+-- Config for: cyberpunk
+time([[Config for cyberpunk]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme cyberpunk\bcmd\bvim\0", "config", "cyberpunk")
+time([[Config for cyberpunk]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
