@@ -97,7 +97,7 @@ use {
       "MunifTanjim/nui.nvim",
     }
   }
-use('github/copilot.vim')
+
 use { 'https://codeberg.org/esensar/nvim-dev-container' }
 require("devcontainer").setup {
     autocommands = {
