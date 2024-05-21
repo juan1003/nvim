@@ -98,6 +98,13 @@ use {
     }
   }
 
+use({
+    "savq/melange-nvim", 
+    as =  'melange',
+    config = function()
+        vim.cmd('colorscheme melange')
+    end
+})
 use { 'https://codeberg.org/esensar/nvim-dev-container' }
 require("devcontainer").setup {
     autocommands = {
