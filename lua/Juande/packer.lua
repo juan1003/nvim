@@ -111,4 +111,5 @@ require("devcontainer").setup {
         init = false
     }
 }
+use('yetone/avante.nvim')
 end)
