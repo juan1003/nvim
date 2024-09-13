@@ -4,112 +4,130 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
-
-  use({ 
-	  'rose-pine/neovim', 
-	  as = 'rose-pine', 
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end 
-  })
-
-  use({
-    'catppuccin/nvim',
-    as = 'catppuccin',
-    config = function()
-        vim.cmd('colorscheme catppuccin')
-    end
-  })
-
-  use({
-    'folke/tokyonight.nvim',
-    as = 'tokyonight',
-    config = function()
-        vim.cmd('colorscheme tokyonight')
-    end
-  })
-
-  use({
-    'thedenisnikulin/vim-cyberpunk',
-    as = 'cyberpunk',
-    config = function()
-        vim.cmd('colorscheme cyberpunk')
-    end
-  })
-
-  use({
-      "oxfist/night-owl.nvim",
-      as = 'night-owl',
-      config = function()
-          vim.cmd('colorscheme night-owl')
-      end
-  })
-
-  use {
-  'VonHeikemen/lsp-zero.nvim',
-  branch = 'v1.x',
-  requires = {
-    -- LSP Support
-    {'neovim/nvim-lspconfig'},             -- Required
-    {                                      -- Optional
-      'williamboman/mason.nvim',
-      run = function()
-        pcall(vim.cmd, 'MasonUpdate')
-      end,
-    },
-    {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
-    -- Autocompletion
-    {'hrsh7th/nvim-cmp'},         -- Required
-    {'hrsh7th/cmp-nvim-lsp'},     -- Required
-    {'hrsh7th/cmp-buffer'},       -- Optional
-    {'hrsh7th/cmp-path'},         -- Optional
-    {'saadparwaiz1/cmp_luasnip'}, -- Optional
-    {'hrsh7th/cmp-nvim-lua'},     -- Optional
-
-    -- Snippets
-    {'L3MON4D3/LuaSnip'},             -- Required
-    {'rafamadriz/friendly-snippets'}, -- Optional
-  }
-}
-use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
-use('nvim-treesitter/playground')
-use('theprimeagen/harpoon')
-use('mbbill/undotree')
-use('tpope/vim-fugitive')
--- Unless you are still migrating, remove the deprecated commands from v1.x
-vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
-
-use {
-  "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
-    requires = { 
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
+        -- or                            , branch = '0.1.x',
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
-  }
 
-use({
-    "savq/melange-nvim", 
-    as =  'melange',
-    config = function()
-        vim.cmd('colorscheme melange')
-    end
-})
-use { 'https://codeberg.org/esensar/nvim-dev-container' }
-require("devcontainer").setup {
-    autocommands = {
-        init = false
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+        config = function()
+            vim.cmd('colorscheme rose-pine')
+        end
+    })
+
+    use({
+        'catppuccin/nvim',
+        as = 'catppuccin',
+        config = function()
+            vim.cmd('colorscheme catppuccin')
+        end
+    })
+
+    use({
+        'folke/tokyonight.nvim',
+        as = 'tokyonight',
+        config = function()
+            vim.cmd('colorscheme tokyonight')
+        end
+    })
+
+    use({
+        'thedenisnikulin/vim-cyberpunk',
+        as = 'cyberpunk',
+        config = function()
+            vim.cmd('colorscheme cyberpunk')
+        end
+    })
+
+    use({
+        "oxfist/night-owl.nvim",
+        as = 'night-owl',
+        config = function()
+            vim.cmd('colorscheme night-owl')
+        end
+    })
+
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
+        requires = {
+            -- LSP Support
+            { 'neovim/nvim-lspconfig' }, -- Required
+            {                            -- Optional
+                'williamboman/mason.nvim',
+                run = function()
+                    pcall(vim.cmd, 'MasonUpdate')
+                end,
+            },
+            { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+
+            -- Autocompletion
+            { 'hrsh7th/nvim-cmp' },         -- Required
+            { 'hrsh7th/cmp-nvim-lsp' },     -- Required
+            { 'hrsh7th/cmp-buffer' },       -- Optional
+            { 'hrsh7th/cmp-path' },         -- Optional
+            { 'saadparwaiz1/cmp_luasnip' }, -- Optional
+            { 'hrsh7th/cmp-nvim-lua' },     -- Optional
+
+            -- Snippets
+            { 'L3MON4D3/LuaSnip' },             -- Required
+            { 'rafamadriz/friendly-snippets' }, -- Optional
+        }
     }
-}
-use('yetone/avante.nvim')
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    use('nvim-treesitter/playground')
+    use('theprimeagen/harpoon')
+    use('mbbill/undotree')
+    use('tpope/vim-fugitive')
+    -- Unless you are still migrating, remove the deprecated commands from v1.x
+    vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v2.x",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        }
+    }
+
+    use({
+        "savq/melange-nvim",
+        as = 'melange',
+        config = function()
+            vim.cmd('colorscheme melange')
+        end
+    })
+
+
+    use {
+        "supermaven-inc/supermaven-nvim",
+        config = function()
+            require("supermaven-nvim").setup({
+                keymaps = {
+                    accept_suggestion = "<Tab>",
+                    clear_suggestion = "<C-]>",
+                    accept_word = "<C-j>",
+                },
+                ignore_filetypes = { cpp = true }, -- or { "cpp", }
+                color = {
+                    suggestion_color = "#ffffff",
+                    cterm = 244,
+                },
+                log_level = "info",  -- set to "off" to disable logging completely
+                disable_inline_completion = false, -- disables inline completion for use with cmp
+                disable_keymaps = false, -- disables built in keymaps for more manual control
+                condition = function()
+                    return false
+                end
+            })
+        end,
+    }
 end)
