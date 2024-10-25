@@ -204,12 +204,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\JuanDeJesus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
-  ["supermaven-nvim"] = {
-    config = { "\27LJ\2\n\15\0\0\1\0\0\0\2+\0\1\0L\0\2\0ç\2\1\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0023\3\n\0=\3\v\2B\0\2\1K\0\1\0\14condition\0\ncolor\1\0\2\21suggestion_color\f#ffffff\ncterm\3ô\1\21ignore_filetypes\1\0\1\bcpp\2\fkeymaps\1\0\a\ncolor\0\14condition\0\30disable_inline_completion\1\14log_level\tinfo\fkeymaps\0\21ignore_filetypes\0\20disable_keymaps\1\1\0\3\22accept_suggestion\n<Tab>\16accept_word\n<C-j>\21clear_suggestion\n<C-]>\nsetup\20supermaven-nvim\frequire\0" },
-    loaded = true,
-    path = "C:\\Users\\JuanDeJesus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\supermaven-nvim",
-    url = "https://github.com/supermaven-inc/supermaven-nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\JuanDeJesus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -234,26 +228,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: cyberpunk
-time([[Config for cyberpunk]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme cyberpunk\bcmd\bvim\0", "config", "cyberpunk")
-time([[Config for cyberpunk]], false)
--- Config for: supermaven-nvim
-time([[Config for supermaven-nvim]], true)
-try_loadstring("\27LJ\2\n\15\0\0\1\0\0\0\2+\0\1\0L\0\2\0ç\2\1\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0023\3\n\0=\3\v\2B\0\2\1K\0\1\0\14condition\0\ncolor\1\0\2\21suggestion_color\f#ffffff\ncterm\3ô\1\21ignore_filetypes\1\0\1\bcpp\2\fkeymaps\1\0\a\ncolor\0\14condition\0\30disable_inline_completion\1\14log_level\tinfo\fkeymaps\0\21ignore_filetypes\0\20disable_keymaps\1\1\0\3\22accept_suggestion\n<Tab>\16accept_word\n<C-j>\21clear_suggestion\n<C-]>\nsetup\20supermaven-nvim\frequire\0", "config", "supermaven-nvim")
-time([[Config for supermaven-nvim]], false)
--- Config for: night-owl
-time([[Config for night-owl]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme night-owl\bcmd\bvim\0", "config", "night-owl")
-time([[Config for night-owl]], false)
 -- Config for: melange
 time([[Config for melange]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme melange\bcmd\bvim\0", "config", "melange")
 time([[Config for melange]], false)
--- Config for: tokyonight
-time([[Config for tokyonight]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight")
-time([[Config for tokyonight]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
@@ -262,6 +240,18 @@ time([[Config for catppuccin]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: cyberpunk
+time([[Config for cyberpunk]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme cyberpunk\bcmd\bvim\0", "config", "cyberpunk")
+time([[Config for cyberpunk]], false)
+-- Config for: tokyonight
+time([[Config for tokyonight]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight")
+time([[Config for tokyonight]], false)
+-- Config for: night-owl
+time([[Config for night-owl]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme night-owl\bcmd\bvim\0", "config", "night-owl")
+time([[Config for night-owl]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
