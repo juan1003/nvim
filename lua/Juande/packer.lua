@@ -105,6 +105,7 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme melange')
         end
     })
+    use { "oonamo/ef-themes.nvim" }
     use("lukas-reineke/indent-blankline.nvim")
     use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
